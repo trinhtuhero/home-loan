@@ -1,0 +1,25 @@
+create TABLE IF NOT EXISTS `profiles`
+(
+    `uuid`         VARCHAR(36)  NOT NULL,
+    `created_at` DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP ON update CURRENT_TIMESTAMP,
+    `phone`       VARCHAR(50) NOT NULL,
+    `full_name`       VARCHAR(150) NULL,
+    `gender`    VARCHAR(20) NULL,
+    `nationality`     VARCHAR(100) NULL,
+    `email`     VARCHAR(100) NULL,
+    `id_no`     VARCHAR(20) NULL,
+    `issued_on`     VARCHAR(100) NULL,
+    `place_of_issue`     VARCHAR(100) NULL,
+    `old_id_no`     VARCHAR(20) NULL,
+    `province`     VARCHAR(30),
+    `province_name`     VARCHAR(250),
+    `district`     VARCHAR(30),
+    `district_name`     VARCHAR(250),
+    `ward`     VARCHAR(30),
+    `ward_name`     VARCHAR(250),
+    `address`     VARCHAR(250) NULL,
+    `marital_status`     VARCHAR(20) NULL,
+    `status`     VARCHAR(20) NULL,
+    PRIMARY KEY (`uuid`, `phone`)
+);

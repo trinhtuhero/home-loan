@@ -1,0 +1,2 @@
+ALTER TABLE married_persons
+CHANGE COLUMN email email VARCHAR(100) NULL DEFAULT NULL ;

@@ -1,0 +1,85 @@
+# Mysql settings
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/homeloan
+    username: root
+    password: secret
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 10
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 60000
+
+server:
+  port: 8080
+logging:
+  level:
+    #    Enable log class to debug to support log feign for debug
+    vn.com.msb.homeloan.core.client.*: DEBUG
+  file:
+    path: "D:/logs/"
+
+feign:
+  common:
+    notify:
+      url: https://services.dev.df.msb.com.vn
+    file:
+      url: https://services.dev.df.msb.com.vn
+    cms:
+      url: https://services.dev.df.msb.com.vn
+      find-by-email: /api/v1/cms/permissions/find-by-email
+  hris:
+    auth:
+      user-name: MSB_DF_API
+      password: 1
+    url: http://hris-uatsrv.msb.com.vn:8000
+    get-info-emp: /PSIGW/RESTListeningConnector/PSFT_HR/GET_INFOR_EMP.v1
+  customer:
+    url: https://services.dev.df.msb.com.vn
+    getAccountInfoByCif: /api/v1/customers/getAccountInfoByCif
+    getFullCustomerInfo: /api/v1/customers/getFullCustomerInfo
+
+msb:
+  paymentgw:
+    tid: R40
+    mid: R40
+    accessCode: DF@2022
+  common:
+    client:
+      code: d2bae8a8-b5cf-4655-9977-ca8d45b8c1de
+      scopes: file_management_service
+    authen:
+      public-key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn1ygCa3jfa8sbnemudykkV3Y/QvPXYcwnT4tDr7lvYVv3aTVc3CpLhR1jPl6mm2UnbIV3ANUnu54SiNGLtlPkqSIfwta0jOJWybKHy31W5kYPtFrbQjQD2YGrZRFn2ys1tFEb/wmk+LyjMedOd4x5sjBTaR/9ewIUrkoGDVmNhqg/usfifogvRtayO7/QXSpC2bz5vlYCHPRfr0UW3rY8Bw12+8ONVwlMhYEmYTxofrFXAHVmpp/gnS0h1PWAIZMM1yWmiYnm3wy4buL72bHTmeoDJpSoVt9erWQR6qufTdnzZ0Yt6nUwWEZYya9p+xFB2W/tExQc2SYjj4UFHyJRwIDAQAB
+  #JWT properties
+  jwt:
+    secret: yqndyfyqmhvdkwehcyxmaiulxidcxcuahyhwkyehkxxukgktldmpuwpsobrbtyzeniajnmnvjudqqfapkuatvhluclgrynojgkdt
+    expiration: 18000
+    expiration-paymentsuccess: 300
+  hash:
+    secret: CJ4@2022
+  url-web-cj4: https://rb.dev.df.msb.com.vn
+  otp:
+    retryConfigs:
+      - count: 1
+        block-time: 120
+        is-reset: false
+      - count: 4
+        block-time: 1800
+        is-reset: true
+  province-special: ;01;79;
+  loan-upload-file-allow: ;doc;docx;pdf;jpg;png;jpeg;
+  loan-upload-file-max-size: 30
+  loan-upload-file-max-item: 100
+  loan-upload-limit-maximum-choose: 3
+#Rest Template
+rest:
+  default:
+    connection:
+      connection-request-timeout: 60000
+      read-timeout: 60000
+    connection-pool:
+      max-total: 100
+      default-max-per-route: 10
+

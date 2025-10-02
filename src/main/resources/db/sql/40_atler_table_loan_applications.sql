@@ -1,0 +1,1 @@
+ALTER TABLE loan_applications ALTER download_status SET DEFAULT 0;

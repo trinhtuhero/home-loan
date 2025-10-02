@@ -1,0 +1,4 @@
+ALTER TABLE `credit_card`
+ADD COLUMN `name_in_card` VARCHAR(19) NULL,
+ADD COLUMN `parent_id` VARCHAR(36) NULL,
+MODIFY COLUMN type     VARCHAR(50) NULL;

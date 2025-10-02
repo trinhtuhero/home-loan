@@ -1,0 +1,1 @@
+update card_policy set name = 'Thẻ tín dụng kèm khoản vay DF' where code = 'card_policy_127'

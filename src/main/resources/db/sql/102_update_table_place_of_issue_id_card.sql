@@ -1,0 +1,2 @@
+update place_of_issue_id_card set name = 'Cục quản lý xuất nhập cảnh', province = 'Cục quản lý xuất nhập cảnh' where code = '3';
+update place_of_issue_id_card set name = 'Bộ Quốc phòng', province = 'Bộ Quốc phòng' where code = '4';

@@ -1,0 +1,197 @@
+# Mysql settings
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/homeloan
+    username: admin
+    password: 4t9jFGNEeYpupyWd
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 10
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 60000
+  jpa:
+    show-sql: true
+
+server:
+  port: 8080
+logging:
+  level:
+    #    Enable log class to debug to support log feign for debug
+    vn.com.msb.homeloan.core.client.*: DEBUG
+    org.springframework.security.web.FilterChainProxy: DEBUG
+  file:
+    path: "D:/logs/"
+
+feign:
+  common:
+    notify:
+      url: https://common-api.dev.df.msb.com.vn
+    file:
+      url: https://common-api.dev.df.msb.com.vn
+    cms:
+      url: https://common-api.dev.df.msb.com.vn
+      author-info: /api/v1/cms/author-info
+  hris:
+    auth:
+      user-name: MSB_DF_API
+      password: 1
+    url: http://hris-uatsrv.msb.com.vn:8000
+    get-info-emp: /PSIGW/RESTListeningConnector/PSFT_HR/GET_INFOR_EMP.v1
+  customer:
+    url: https://common-api.dev.df.msb.com.vn
+    getAccountInfoByCif: /api/v1/customers/getAccountInfoByCif
+    getFullCustomerInfo: /api/v1/customers/getFullCustomerInfo
+  op-risk:
+    reqId: 20211012121
+    reqApp: DFS
+    authorizer: DFUSR
+    password: DFPASS@2022
+    srvCheckP: SRV075
+    srvCheckC: SRV093
+    name: OPRISK
+    url: https://common-api.dev.df.msb.com.vn
+    api:
+      checkC: /api/v1/customers/oprisk/black-list/check-c
+      checkP: /api/v1/customers/oprisk/black-list/check-p
+  css:
+    channel: GET_SCORE_RB
+    userAuthen: userapidf
+    password: M$b@2022
+    specializedBank: RB
+    name: CSS
+    url: https://common-api.dev.df.msb.com.vn/api/v1/customers/css/scoreAndRank
+  cic:
+    name: CIC
+    url: https://common-api.dev.df.msb.com.vn/
+    api:
+      search-code: api/v1/customers/cic/search-code
+      search: api/v1/customers/cic/search
+  aml:
+    url: https://common-api.dev.df.msb.com.vn/
+    api:
+      check: api/v1/customers/aml/check
+  m-value:
+    name: MVALUE
+    url: https://common-api.dev.df.msb.com.vn/
+    api:
+      get-by-code: api/v1/customers/mvalue/collateral/get-by-code
+      check-duplicate: api/v1/customers/mvalue/col-lateral/check-duplicate
+      upload-legal: api/v1/customers/mvalue/collateral-info/upload-legal
+      create-profile: api/v1/customers/mvalue/create-profile
+      get-price-bracket-info: api/v1/customers/mvalue/get-price-bracket-info
+  notify:
+    team:
+      name: team
+      webhook-url: https://msbvn.webhook.office.com/webhookb2/465b7be4-ca75-4f32-8149-30f80a2706ef@283656d9-0142-4e27-ba05-2f8b2b3005aa/IncomingWebhook/5dc2ccf3354e4450891fb855c8b25380/b9c44c0d-a886-4226-bc3c-d6e5bccd63a0
+  cj4:
+    url: https://rb-api.dev.df.msb.com.vn
+    secret: CJ5@2023
+    channel: ONLINE_CHANNEL_LDP_CJ5
+    key: d8806212-ea2b-11ed-a05b-0242ac120003
+    path:
+      send-lead: ${CJ4_SEND_LEAD:/rb-bancassurance-be/api/v1/internal/life/save-lead}
+      get-link: ${CJ4_GET_LINK:/rb-bancassurance-be/api/v1/internal/life/get-links}
+      update-lead: ${CJ4_UPDATE_LEAD:/rb-bancassurance-be/api/v1/internal/life/update-lead}
+      get-products: ${CJ4_GET_PRODUCTS:/rb-bancassurance-be/api/v1/life/products}
+      calculate-insurance: ${CJ4_CALCULATE_INSURANCE:/rb-bancassurance-be/api/v1/life/calculator}
+      get-life-info: ${CJ4_GET_LIFE_INFO:/rb-bancassurance-be/api/v1/internal/life/info}
+msb:
+  paymentgw:
+    tid: R40
+    mid: R40
+    accessCode: DF@2022
+  common:
+    cms:
+      role:
+        admin: CJ5-ADMIN
+        rm: CJ5-RM
+        bm: CJ5-BM
+    client:
+      code: 15e38e67-85a1-45a6-aa05-802f8320e9b1
+      scopes: file_management_service
+    authen:
+      public-key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn1ygCa3jfa8sbnemudykkV3Y/QvPXYcwnT4tDr7lvYVv3aTVc3CpLhR1jPl6mm2UnbIV3ANUnu54SiNGLtlPkqSIfwta0jOJWybKHy31W5kYPtFrbQjQD2YGrZRFn2ys1tFEb/wmk+LyjMedOd4x5sjBTaR/9ewIUrkoGDVmNhqg/usfifogvRtayO7/QXSpC2bz5vlYCHPRfr0UW3rY8Bw12+8ONVwlMhYEmYTxofrFXAHVmpp/gnS0h1PWAIZMM1yWmiYnm3wy4buL72bHTmeoDJpSoVt9erWQR6qufTdnzZ0Yt6nUwWEZYya9p+xFB2W/tExQc2SYjj4UFHyJRwIDAQAB
+  #JWT properties
+  jwt:
+    secret: yqndyfyqmhvdkwehcyxmaiulxidcxcuahyhwkyehkxxukgktldmpuwpsobrbtyzeniajnmnvjudqqfapkuatvhluclgrynojgkdt
+    expiration: 18000
+    expiration-paymentsuccess: 300
+  hash:
+    secret: CJ5@2022
+  sha256:
+    secret: CJ5@2022
+  cj5:
+    ldp:
+      url: https://hl.dev.df.msb.com.vn
+      danh-sach-vay: /danh-sach-vay
+      chi-tiet-vay: /chi-tiet-vay
+    cms:
+      url: https://hl-cms.dev.df.msb.com.vn
+      loan-detail: /home-loan/view/
+    email-template:
+      number-of-working-days: 5
+    customer-support-email: tutv4@msb.com.vn
+  resources:
+    static:
+      header: https://common-services-dev-public-cj2.s3.ap-southeast-1.amazonaws.com/static/ce8c6957-e723-4de3-9e1e-f2736b3391ec.png
+      apple-store: https://common-services-dev-public-cj2.s3.ap-southeast-1.amazonaws.com/static/8ad231d4-a725-4d80-9c73-952caa5aab7e.png
+      google-play: https://common-services-dev-public-cj2.s3.ap-southeast-1.amazonaws.com/static/08bbad43-f2b9-40c8-bc47-3cce568472f6.png
+      banner: https://common-services-dev-public-cj2.s3.ap-southeast-1.amazonaws.com/static/c49fb9c3-9911-4680-b871-4f47966cb8e1.jpeg
+      logo: https://common-services-dev-public-cj2.s3.ap-southeast-1.amazonaws.com/static/941a1724-e396-4221-b8d0-110522cd2975.png
+      logo-page: https://common-services-dev-public-cj2.s3.ap-southeast-1.amazonaws.com/static/5014eae9-ae13-4e89-bdb0-3fceee2ea5c7.png
+  otp:
+    retryConfigs:
+      - count: 1
+        block-time: 30
+        is-reset: false
+      - count: 4
+        block-time: 60
+        is-reset: true
+  province-special: ;01;79;
+  loan-upload-file-allow: ;doc;docx;pdf;jpg;png;jpeg;
+  loan-upload-file-mvalue-allow: ;jpg;jpeg;png;pdf;doc;docx;ppt;pptx;pps;ppsx;xls;xlsx;zip;txt;
+  loan-upload-file-max-size: 30
+  loan-upload-file-max-item: 100
+  loan-upload-limit-maximum-choose: 3
+  loan-applications-status-allow-close: ACCEPT_LOAN_REQUEST,ACCEPT_LOAN_APPLICATION,PROCESSING
+  deal-application-link: https://hl-cms.dev.df.msb.com.vn/home-loan/detail/
+#Rest Template
+rest:
+  default:
+    connection:
+      connection-request-timeout: 60000
+      read-timeout: 60000
+    connection-pool:
+      max-total: 100
+      default-max-per-route: 10
+
+# Job
+upload:
+  loan:
+    zip:
+      job:
+        select:
+          top: 2
+
+# Kafka
+kafka:
+  mobio:
+    bootstrap-servers: 10.1.38.42:9092
+    consumer-listen-auto-start: false
+loan-calculator:
+  formula:
+    check-capability: '0.7*${income} - 2000000'
+    loan-time: '0.7*${income}-${monthly}'
+    loan-amount: '(365*(0.7*${income}-${monthly})*${loanTerm})/(365+${loanTerm}*(0.126*30))'
+  incomeMin: 5000000
+  collateral:
+    min: 200000000
+    max: 100000000000
+  loanTerm:
+    min: 3
+    max: 300
+  loan:
+    min: 100000000
+    max: 20000000000

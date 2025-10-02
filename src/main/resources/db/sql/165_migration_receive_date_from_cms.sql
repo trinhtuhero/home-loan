@@ -1,0 +1,1 @@
+update loan_applications set receive_date = created_at where receive_channel = 'CMS' and receive_date is null;

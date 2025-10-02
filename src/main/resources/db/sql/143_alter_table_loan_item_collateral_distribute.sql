@@ -1,0 +1,2 @@
+ALTER TABLE loan_item_collateral_distribute
+  RENAME TO loan_item_collateral_distribution;

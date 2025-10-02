@@ -1,0 +1,55 @@
+server:
+  servlet:
+    context-path: /@project.artifactId@
+info:
+  application:
+    name: ${spring.application.name}
+    description: Very cool Spring Boot application
+    version: '@project.version@'
+    spring-cloud-version: '@spring-cloud.version@'
+    spring-boot-version: '@project.parent.version@'
+
+spring:
+  application:
+    name: @project.artifactId@
+    version: @project.version@
+  profiles.active: ${MSB_ENV:local}
+  jpa:
+    show-sql: false
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL57Dialect
+      generate_statistics: false
+      show_sql: false
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+  liquibase:
+    enabled: true
+    change-log: classpath:/db/changelog/changelog-master.xml
+  sleuth:
+    web.additional-skip-pattern: (^/.*)?/health
+  servlet:
+    multipart:
+      max-request-size: 500MB
+      max-file-size: 500MB
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web.exposure.include: info,health
+  info:
+    env:
+      enabled: true
+
+
+logging:
+  level.root: info
+feign:
+  circuitbreaker:
+    enabled: false
+
+lombok:
+  addLombokGeneratedAnnotation: true
+

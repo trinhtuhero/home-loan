@@ -1,0 +1,2 @@
+DROP PROCEDURE IF EXISTS get_keys;
+DROP PROCEDURE IF EXISTS get_cms_keys;

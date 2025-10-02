@@ -1,0 +1,8 @@
+alter table `op_risk`
+ADD COLUMN `check_type` VARCHAR(25) NULL,
+ADD COLUMN `identify_info` VARCHAR(100) NULL,
+ADD COLUMN `collateral_type` VARCHAR(25) NULL,
+MODIFY COLUMN  `identity_card` VARCHAR(20) NULL,
+MODIFY COLUMN  `name` VARCHAR(250) NULL,
+MODIFY COLUMN  `birthday` VARCHAR(20) NULL,
+MODIFY COLUMN  `end_date` VARCHAR(20) NULL;

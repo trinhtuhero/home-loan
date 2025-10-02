@@ -1,0 +1,7 @@
+update file_config set long_guide_desc ='Ví dụ: nguồn thu từ lãi sổ tiết kiệm -> cung cấp sổ tiết kiệm<br>Nguồn thu từ cho thuê tài sản -> cung cấp sổ đỏ/ đăng ký xe<br>Nguồn thu từ giao dịch mua bán bất động sản (giao dịch gom xây) -> Các giao dịch UCHI.<br>Chứng từ thay thế:<br>(1) Hợp đồng mua bán công chứng/chứng thực<br>(2) Sao kê tài khoản ngân hàng',
+                       cms_long_guide_desc = 'Ví dụ: nguồn thu từ lãi sổ tiết kiệm -> cung cấp sổ tiết kiệm<br>Nguồn thu từ cho thuê tài sản -> cung cấp sổ đỏ/ đăng ký xe<br>Nguồn thu từ giao dịch mua bán bất động sản (giao dịch gom xây) -> Các giao dịch UCHI.<br>Chứng từ thay thế:<br>(1) Hợp đồng mua bán công chứng/chứng thực<br>(2) Sao kê tài khoản ngân hàng'
+where name  = 'Chứng từ chứng minh nguồn gốc nguồn thu';
+
+update file_config set long_guide_desc ='Ví dụ: cung cấp hợp đồng cho thuê tài sản/ sao kê tài khoản thể hiển dòng tiền thu được từ việc cho thuê tài sản<br>Đối với Nguồn thu từ giao dịch mua bán bất động sản (giao dịch gom xây): cung cấp chứng từ Tài sản tích lũy',
+                       cms_long_guide_desc = 'Ví dụ: cung cấp hợp đồng cho thuê tài sản/ sao kê tài khoản thể hiển dòng tiền thu được từ việc cho thuê tài sản<br>Đối với Nguồn thu từ giao dịch mua bán bất động sản (giao dịch gom xây): cung cấp chứng từ Tài sản tích lũy'
+where name  = 'Chứng từ chứng minh độ lớn nguồn thu';

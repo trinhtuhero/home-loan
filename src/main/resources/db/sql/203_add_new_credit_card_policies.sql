@@ -1,0 +1,1 @@
+INSERT INTO card_policy (created_at, updated_at, code, name) VALUES ('2023-05-04 02:22:33', '2023-05-04 02:22:33', 'card_policy_127', 'DFSCC - Thẻ tín dụng kèm khoản vay DF');

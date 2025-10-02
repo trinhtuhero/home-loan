@@ -1,0 +1,11 @@
+INSERT INTO district (code,name,province_code,mobio_code,mobio_name,mobio_province_code,mercury_name) VALUES ('974','Thị xã Phú Mỹ','77','974','Thị xã Phú Mỹ','77','Thị xã Phú Mỹ');
+INSERT INTO ward (code,name,mobio_code,district_code,province_code,mobio_district_code,mobio_province_code) VALUES ('32258','Phường Phú Mỹ','32258','974','77','974','77');
+INSERT INTO ward (code,name,mobio_code,district_code,province_code,mobio_district_code,mobio_province_code) VALUES ('32249','Xã Tân Hoà','32249','974','77','974','77');
+INSERT INTO ward (code,name,mobio_code,district_code,province_code,mobio_district_code,mobio_province_code) VALUES ('32250','Xã Tân Hải','32250','974','77','974','77');
+INSERT INTO ward (code,name,mobio_code,district_code,province_code,mobio_district_code,mobio_province_code) VALUES ('32251','Phường Phước Hoà','32251','974','77','974','77');
+INSERT INTO ward (code,name,mobio_code,district_code,province_code,mobio_district_code,mobio_province_code) VALUES ('32252','Phường Tân Phước','32252','974','77','974','77');
+INSERT INTO ward (code,name,mobio_code,district_code,province_code,mobio_district_code,mobio_province_code) VALUES ('32253','Phường Mỹ Xuân','32253','974','77','974','77');
+INSERT INTO ward (code,name,mobio_code,district_code,province_code,mobio_district_code,mobio_province_code) VALUES ('32254','Xã Sông Xoài','32254','974','77','974','77');
+INSERT INTO ward (code,name,mobio_code,district_code,province_code,mobio_district_code,mobio_province_code) VALUES ('32255','Phường Hắc Dịch','32255','974','77','974','77');
+INSERT INTO ward (code,name,mobio_code,district_code,province_code,mobio_district_code,mobio_province_code) VALUES ('32256','Xã Châu Pha','32256','974','77','974','77');
+INSERT INTO ward (code,name,mobio_code,district_code,province_code,mobio_district_code,mobio_province_code) VALUES ('32257','Xã Tóc Tiên','32257','974','77','974','77');

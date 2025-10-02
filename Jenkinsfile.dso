@@ -1,0 +1,19 @@
+node(){
+    tool name: 'maven-3'
+    stage('Checkout SCM'){
+        def myRepo = checkout scm
+    }
+    def jenkinsVar = readProperties  file: './Jenkins.properties'
+    env.GITHASH  = sh(script: "printf \$(git log -1 --oneline | cut -c 1-8 )", returnStdout: true)
+
+    try {
+        ansiColor('xterm'){
+            cj5_be_pipeline(env.BRANCH_NAME, env.TAG_NAME, env.GITHASH, jenkinsVar)
+        }
+
+    } catch (err) {
+        print err
+    } finally {
+        cleanWs()
+    }
+}

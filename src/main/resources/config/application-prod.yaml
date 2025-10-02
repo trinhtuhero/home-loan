@@ -1,0 +1,168 @@
+# Mysql settings
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER_NAME}
+    password: ${DB_PASSWORD}
+
+  redis:
+    host: ${REDIS_URL}
+    port: 6379
+    timeout: 60000
+
+feign:
+  common:
+    notify:
+      url: https://services.prod.df.msb.com.vn
+    file:
+      url: https://services.prod.df.msb.com.vn
+    cms:
+      url: https://services.prod.df.msb.com.vn
+      author-info: /api/v1/cms/author-info
+  hris:
+    auth:
+      user-name: MSB_DF_API
+      password: ${HRIS_AUTH_PASS}
+    url: http://hris-uatsrv.msb.com.vn:8000
+    get-info-emp: /PSIGW/RESTListeningConnector/PSFT_HR/GET_INFOR_EMP.v1
+  customer:
+    url: https://services.prod.df.msb.com.vn
+    getAccountInfoByCif: /api/v1/customers/getAccountInfoByCif
+    getFullCustomerInfo: /api/v1/customers/getFullCustomerInfo
+  op-risk:
+    reqId: 20211012121
+    reqApp: ${OPRISK_REQAPP}
+    authorizer: ${OPRISK_AUTHORIZER}
+    password: ${OPRISK_PASSWORD}
+    srvCheckP: SRV075
+    srvCheckC: SRV093
+    name: OPRISK
+    url: https://services.prod.df.msb.com.vn
+    api:
+      checkC: /api/v1/customers/oprisk/black-list/check-c
+      checkP: /api/v1/customers/oprisk/black-list/check-p
+  css:
+    channel: GET_SCORE_RB
+    userAuthen: ${CSS_AUTHORIZER}
+    password: ${CSS_PASSWORD}
+    specializedBank: RB
+    name: CSS
+    url: ${CSS_URL}
+  cic:
+    name: CIC
+    url: https://services.prod.df.msb.com.vn
+    api:
+      search-code: /api/v1/customers/cic/search-code
+      search: /api/v1/customers/cic/search
+  aml:
+    url: https://services.prod.df.msb.com.vn/
+    api:
+      check: api/v1/customers/aml/check
+  m-value:
+    name: MVALUE
+    url: https://services.prod.df.msb.com.vn/
+    api:
+      get-by-code: api/v1/customers/mvalue/collateral/get-by-code
+      check-duplicate: api/v1/customers/mvalue/col-lateral/check-duplicate
+      upload-legal: api/v1/customers/mvalue/collateral-info/upload-legal
+      create-profile: api/v1/customers/mvalue/create-profile
+      get-price-bracket-info: api/v1/customers/mvalue/get-price-bracket-info
+  notify:
+    team:
+      name: team
+      webhook-url: https://msbvn.webhook.office.com/webhookb2/465b7be4-ca75-4f32-8149-30f80a2706ef@283656d9-0142-4e27-ba05-2f8b2b3005aa/IncomingWebhook/fa21c3ee506e42f182d807a786cc2f55/b9c44c0d-a886-4226-bc3c-d6e5bccd63a0
+  cj4:
+    url: ${CJ4_URL:https://rb-api.prod.df.msb.com.vn}
+    secret: ${CJ4_SECRET:CJ5@2023}
+    channel: ONLINE_CHANNEL_LDP_CJ5
+    key: ${GATEWAY_SECRET:d8806212-ea2b-11ed-a05b-0242ac120003}
+    path:
+      send-lead: ${CJ4_SEND_LEAD:/rb-bancassurance-be/api/v1/internal/life/save-lead}
+      get-link: ${CJ4_GET_LINK:/rb-bancassurance-be/api/v1/internal/life/get-links}
+      update-lead: ${CJ4_UPDATE_LEAD:/rb-bancassurance-be/api/v1/internal/life/update-lead}
+      get-products: ${CJ4_GET_PRODUCTS:/rb-bancassurance-be/api/v1/life/products}
+      calculate-insurance: ${CJ4_CALCULATE_INSURANCE:/rb-bancassurance-be/api/v1/life/calculator}
+      get-life-info: ${CJ4_GET_LIFE_INFO:/rb-bancassurance-be/api/v1/internal/life/info}
+msb:
+  paymentgw:
+    tid: R40
+    mid: R40
+    accessCode: DF@2022
+  common:
+    cms:
+      role:
+        admin: CJ5-ADMIN
+        rm: CJ5-RM
+        bm: CJ5-BM
+    client:
+      code: ${CJ5_CLIENT_CODE}
+      scopes: ${CJ5_CLIENT_SCOPES}
+    authen:
+      public-key: ${AUTHEN_PUBLIC_KEY}
+  #JWT properties
+  jwt:
+    secret: ${LDP_TOKEN_SECRET}
+    expiration: ${LDP_TOKEN_EXPIRED}
+    expiration-paymentsuccess: 300
+  hash:
+    secret: CJ5@2022
+  sha256:
+    secret: CJ5@2022
+  cj5:
+    ldp:
+      url: ${LDP_URL}
+      danh-sach-vay: /danh-sach-vay
+      chi-tiet-vay: /chi-tiet-vay
+    cms:
+      url: https://cms-df.msb.com.vn/
+      loan-detail: /home-loan/view/
+    email-template:
+      number-of-working-days: 5
+    customer-support-email: tutv4@msb.com.vn, hienpv5@msb.com.vn, hoant43@msb.com.vn
+  resources:
+    static:
+      header: ${RESOURCES_STATIC_HEADER}
+      apple-store: ${RESOURCES_STATIC_APPLE_STORE}
+      google-play: ${RESOURCES_STATIC_GOOGLE_PLAY}
+      banner: ${RESOURCES_STATIC_BANNER}
+      logo: ${RESOURCES_STATIC_LOGO}
+      logo-page: ${RESOURCES_STATIC_LOGO_PAGE}
+  otp:
+    retryConfigs:
+      - count: 1
+        block-time: 120
+        is-reset: false
+      - count: 4
+        block-time: 1800
+        is-reset: true
+  province-special: ;01;79;
+  loan-upload-file-allow: ;doc;docx;pdf;jpg;png;jpeg;
+  loan-upload-file-mvalue-allow: ;jpg;jpeg;png;pdf;doc;docx;ppt;pptx;pps;ppsx;xls;xlsx;zip;txt;
+  loan-upload-file-max-size: 30
+  loan-upload-file-max-item: 100
+  loan-upload-limit-maximum-choose: 5
+  loan-applications-status-allow-close: ACCEPT_LOAN_REQUEST,ACCEPT_LOAN_APPLICATION,PROCESSING,NEED_ADDITIONAL_INFO
+  deal-application-link: https://cms-df.msb.com.vn/home-loan/view/
+#Rest Template
+rest:
+  default:
+    connection:
+      connection-request-timeout: 60000
+      read-timeout: 60000
+    connection-pool:
+      max-total: 100
+      default-max-per-route: 10
+
+# Job
+upload:
+  loan:
+    zip:
+      job:
+        select:
+          top: 2
+
+# Kafka
+kafka:
+  mobio:
+    bootstrap-servers: 10.1.33.43:9092,10.1.33.44:9092,10.1.33.85:9092,10.1.33.86:9092
+    consumer-listen-auto-start: true

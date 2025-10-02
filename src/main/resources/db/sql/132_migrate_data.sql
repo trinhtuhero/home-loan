@@ -1,0 +1,2 @@
+insert into loan_application_item (uuid, loan_application_id, debt_payment_method, grace_period, interest_rate_program, disbursement_method, rm_review, interest_code, product_text_code, document_number_2, officer_code, loan_purpose, loan_time, loan_asset_value, loan_amount)
+select UUID(), uuid, debt_payment_method, grace_period, program_interest_rates, disbursement_method, rm_review, interest_code, product_text_code, document_number_2, officer_code, loan_purpose, loan_time, loan_asset_value, loan_amount from loan_applications;

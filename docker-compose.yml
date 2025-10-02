@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+
+  # To run the app via docker-compose
+  # 1. mvn clean package spring-boot:repackage -DskipTests
+  # 2. mkdir -p build
+  # 3. cp sample-api/target/sample-api-1.0.0-*.war build/
+  # 4. docker build . -t sample-api:latest
+  # 5. docker-compose up -d
+  #  api:
+  #    container_name: sample-api
+  #    image: sample-api:latest
+  #    ports:
+  #      - 8080:8080
+  #    depends_on:
+  #      - redis
+  #      - kafka
+  #      - mysql
+  #      - elasticsearch
+  #    environment:
+  #      WAIT_HOSTS: kafka:29092
+  #      spring.kafka.bootstrap-servers: "kafka:29092"
+  #      log.json.disable: "true"
+  #      spring.redis.host: "redis"
+  #      spring.datasource.url: "jdbc:mysql://mysql:3306/sample?useUnicode=yes&characterEncoding=UTF-8"
+
+  mysql:
+    container_name: home-loan-mysql
+    image: mysql:8.0.23
+    command: "mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci"
+    volumes:
+      - ./docker/mysql/init-database-test.sql:/docker-entrypoint-initdb.d/init-database-test.sql
+    environment:
+      MYSQL_DATABASE: homeloan
+      MYSQL_ROOT_PASSWORD: secret
+    ports:
+      - 3316:3306
+  redis:
+    container_name: home-loan-redis
+    image: redis:5.0.6-alpine
+    ports:
+      - 6379:6379

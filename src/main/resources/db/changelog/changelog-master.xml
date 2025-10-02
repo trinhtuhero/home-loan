@@ -1,0 +1,1766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+  <changeSet author="hienpv5" id="1_create_table_profiles">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/1_create_table_profiles.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="2_create_table_loan_applications">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/2_create_table_loan_applications.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="3_create_table_contact_persons">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/3_create_table_contact_persons.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="4_create_table_married_person">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/4_create_table_married_person.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="5_create_table_business_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/5_create_table_business_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="6_create_table_salary_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/6_create_table_salary_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="7_create_table_other_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/7_create_table_other_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="8_add_birthday_to_married_person">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/8_add_birthday_to_married_person.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="9_add_birthday_to_loan_application">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/9_add_birthday_to_loan_application.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="10_create_table_loan_payer">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/10_create_table_loan_payer.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="11_update_table_business_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/11_update_table_business_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="12_update_table_salary_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/12_update_table_salary_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="hienpv5" id="13_add_birthday_table_profiles">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/13_add_birthday_table_profiles.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="14_add_loan_code_table_loan_applications">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/14_add_loan_code_table_loan_applications.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="15_create_table_collateral">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/15_create_table_collateral.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="16_create_table_loan_upload_files">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/16_create_table_loan_upload_files.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="17_create_table_file_config">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/17_create_table_file_config.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="18_create_table_file_config_rule">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/18_create_table_file_config_rule.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="19_create_table_file_rules">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/19_create_table_file_rules.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="20_create_table_file_config_categories">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/20_create_table_file_config_categories.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="21_atler_table_married_persons">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/21_atler_table_married_persons.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="22_add_birthday_table_loan_payer">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/22_add_birthday_table_loan_payer.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="23_update_table_file_config_categories">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/23_update_table_file_config_categories.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="24_add_order_number_table_file_config">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/24_add_order_number_table_file_config.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="25_add_status_table_loan_upload_file">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/25_add_status_table_loan_upload_file.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="26_add_file_format_desc_table_file_config">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/26_add_file_format_desc_table_file_config.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="27_create_table_loan_application_sequence">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/27_create_table_loan_application_sequence.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="28_add_version_table_loan_application_sequence">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/28_add_version_table_loan_application_sequence.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="29_current_step_table_loan_application">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/29_current_step_table_loan_application.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="30_create_table_loan_app_send_mail">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/30_create_table_loan_app_send_mail.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="31_create_table_send_mail_log">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/31_create_table_send_mail_log.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="35_create_table_shedlock">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/35_create_table_shedlock.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="35_create_table_shedlock">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/35_create_table_shedlock.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="36_add_pic_rm_table_loan_applications">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/36_add_pic_rm_table_loan_applications.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="37_add_download_status_table_loan_applications">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/37_add_download_status_table_loan_applications.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="38_add_prefix_table_file_config_categories">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/38_add_prefix_table_file_config_categories.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="39_add_ref_code_table_profiles">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/39_add_ref_code_table_profiles.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="40_atler_table_loan_applications">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/40_atler_table_loan_applications.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="41_create_table_cms_users">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/41_create_table_cms_users.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="42_add_column_table_loan_application">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/42_add_column_table_loan_application.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="blvu" id="43_create_table_loan_status_change">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/43_create_table_loan_status_change.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="44_create_table_place_of_issue">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/44_create_table_place_of_issue.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--<changeSet author="hienpv5" id="44_update_place_of_issue">
+      <sqlFile dbms="mysql"
+               path="classpath:/db/sql/44_update_place_of_issue.sql"
+               relativeToChangelogFile="false"/>
+  </changeSet>-->
+
+  <changeSet author="tutv4" id="45_create_table_loan_application_comment">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/45_create_table_loan_application_comment.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="46_create_table_upload_file_comment">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/46_create_table_upload_file_comment.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="47_create_table_upload_file_status">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/47_create_table_upload_file_status.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="48_alter_table_upload_file_comment">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/48_alter_table_upload_file_comment.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="49_alter_table_upload_file_status">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/49_alter_table_upload_file_status.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="50_create_table_province">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/50_create_table_province.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="51_create_table_district">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/51_create_table_district.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="52_create_table_ward">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/52_create_table_ward.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="53_create_table_organization">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/53_create_table_organization.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="54_add_column_table_ward">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/54_add_column_table_ward.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="55_add_column_table_cms_users">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/55_add_column_table_cms_users.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="56_add_column_status_table_cms_users">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/56_add_column_status_table_cms_users.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="57_add_column_leader_email_table_cms_users">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/57_add_column_leader_email_table_cms_users.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="58_add_column_number_of_dependents_table_profiles">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/58_add_column_number_of_dependents_table_profiles.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="59_add_column_table_loan_application">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/59_add_column_table_loan_application.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="59_alter_table_business_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/59_alter_table_business_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="60_alter_table_province">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/60_alter_table_province.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="67_add_column_role_table_cms_users">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/67_add_column_role_table_cms_users.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="68_alter_table_contact_person">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/68_alter_table_contact_person.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="60_add_column_table_married_persons">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/60_add_column_table_married_persons.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="61_add_column_table_loan_payer">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/61_add_column_table_loan_payer.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="62_alter_table_add_column_table_collateral">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/62_alter_table_add_column_table_collateral.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="63_create_table_collateral_owner">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/63_create_table_collateral_owner.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="64_alter_table_collateral.sql">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/64_alter_table_collateral.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="65_create_table_collateral_owner_map">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/65_create_table_collateral_owner_map.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="66_create_table_loan_pre_approval">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/66_create_table_loan_pre_approval.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="hienpv5" id="67_create_table_loan_pre_approval_his">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/67_create_table_loan_pre_approval_his.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="68_add_column_table_salary_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/68_add_column_table_salary_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="69_add_column_work_grouping_table_salary_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/69_add_column_work_grouping_table_salary_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="70_add_column_table_loan_application">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/70_add_column_table_loan_application.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="71_add_column_table_business_income">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/71_add_column_table_business_income.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="72_add_column_table_other_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/72_add_column_table_other_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="73_create_table_cms_file_rule">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/73_create_table_cms_file_rule.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="74_create_table_cms_file_config_rule">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/74_create_table_cms_file_config_rule.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--<changeSet author="tuanca3" id="69_alter_table_add_index">
+      <sqlFile dbms="mysql"
+               path="classpath:/db/sql/69_alter_table_add_index.sql"
+               relativeToChangelogFile="false"/>
+  </changeSet>-->
+
+  <!--<changeSet author="tutv4" id="70_init_data_file_config">
+      <sqlFile dbms="mysql"
+               path="classpath:/db/sql/70_init_data_file_config.sql"
+               relativeToChangelogFile="false"/>
+  </changeSet>-->
+
+  <!--<changeSet author="tutv4" id="71_drop_procedure_get_keys">
+      <sqlFile dbms="mysql"
+               path="classpath:/db/sql/71_drop_procedure_get_keys.sql"
+               relativeToChangelogFile="false"/>
+  </changeSet>-->
+
+  <!--<changeSet author="tutv4" id="72_create_procedure">
+      <sqlFile path="classpath:/db/sql/72_create_procedure.sql"
+               endDelimiter="#"
+               stripComments="false"
+               splitStatements="false"/>
+  </changeSet>-->
+
+  <!--<changeSet author="hienpv5" id="73_atler_table_loan_applications">
+      <sqlFile path="classpath:/db/sql/73_atler_table_loan_applications.sql"
+               endDelimiter="#"
+               stripComments="false"
+               splitStatements="false"/>
+  </changeSet>-->
+
+  <changeSet author="hienpv5" id="70_create_table_cms_tab_action">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/70_create_table_cms_tab_action.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="tuanca3" id="75_create_table_asset_evaluate">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/75_create_table_asset_evaluate.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="76_create_table_asset_evaluate_item">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/76_create_table_asset_evaluate_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="77_create_table_other_evaluate">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/77_create_table_other_evaluate.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="78_create_table_op_risk">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/78_create_table_op_risk.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="79_create_table_css">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/79_create_table_css.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="80_create_table_cic">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/80_create_table_cic.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="81_create_table_cic_item">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/81_create_table_cic_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="82_update_table_collateral">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/82_update_table_collateral.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="83_alter_table_salary_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/83_alter_table_salary_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="84_create_table_credit_appraisal">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/84_create_table_credit_appraisal.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="85_create_table_creditworthiness_items">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/85_create_table_creditworthiness_items.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="85_add_column_table_loan_application">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/85_add_column_table_loan_application.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="86_create_table_field_survey_items">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/86_create_table_field_survey_items.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="87_create_table_exception_items">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/87_create_table_exception_items.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="88_alter_table_creditworthiness_items">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/88_alter_table_creditworthiness_items.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--89_create_table_credit_institution-->
+  <changeSet author="tutv4" id="89_create_table_credit_institution">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/89_create_table_credit_institution.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--90_init_data_table_credit_institution-->
+  <changeSet author="tutv4" id="90_init_data_table_credit_institution">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/90_init_data_table_credit_institution.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="91_alter_table_business_income">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/91_alter_table_business_income.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="92_add_column_table_business_income">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/92_add_column_table_business_income.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="93_add_column_table_collateral_owner">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/93_add_column_table_collateral_owner.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="93_alter_table_loan_application">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/93_alter_table_loan_application.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="94_alter_table_salary_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/94_alter_table_salary_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="95_alter_table_asset_evaluate">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/95_alter_table_asset_evaluate.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="96_alter_table_other_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/96_alter_table_other_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="97_alter_table_other_evaluate">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/97_alter_table_other_evaluate.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="98_alter_table_cic_item">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/98_alter_table_cic_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="99_alter_tables_income">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/99_alter_tables_income.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="100_alter_all_tables_created_at_updated_at">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/100_alter_all_tables_created_at_updated_at.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="101_alter_tables_business_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/101_alter_tables_business_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="102_update_table_place_of_issue_id_card">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/102_update_table_place_of_issue_id_card.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="103_alter_table_cic_item">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/103_alter_table_cic_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="104_alter_table_oprisk">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/104_alter_table_oprisk.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="105_create_table_mtk_tracking">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/105_create_table_mtk_tracking.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="105_alter_table_oprisk">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/105_alter_table_oprisk.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="106_alter_table_business_income">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/106_alter_table_business_income.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="107_alter_table_asset_evaluate">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/107_alter_table_asset_evaluate.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="108_alter_table_other_evaluate">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/108_alter_table_other_evaluate.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="109_alter_table_asset_evaluate_item">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/109_alter_table_asset_evaluate_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="110_alter_table_loan_application">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/110_alter_table_loan_application.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="73_update_master_data_ward">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/73_update_master_data_ward.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--111_alter_table_credit_institution.sql-->
+  <changeSet author="tutv4" id="111_alter_table_credit_institution">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/111_alter_table_credit_institution.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="112_alter_table_orginazition_and_init_data">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/112_alter_table_orginazition_and_init_data.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv" id="106_create_table_product_code_config">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/106_create_table_product_code_config.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="113_alter_table_creditworthiness_items">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/113_alter_table_creditworthiness_items.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="114_alter_table_loan_application">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/114_alter_table_loan_application.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="115_insert_product_config">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/115_insert_product_config.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="116_init_data">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/116_init_data.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="117_create_procedure">
+    <sqlFile path="classpath:/db/sql/117_create_procedure.sql"
+      endDelimiter="#"
+      stripComments="false"
+      splitStatements="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="118_alter_table_cic_item">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/118_alter_table_cic_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="118_alter_table_creditworthiness_items">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/118_alter_table_creditworthiness_items.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="119_alter_table_collaterals">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/119_alter_table_collaterals.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--120_alter_table_loan_applications.sql-->
+  <changeSet author="tutv4" id="120_alter_table_loan_applications">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/120_alter_table_loan_applications.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="121_add_other_type_to_credit_institution">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/121_add_other_type_to_credit_institution.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="122_alter_table_update_max_length">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/122_alter_table_update_max_length.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="123_create_table_credit_card">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/123_create_table_credit_card.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="124_create_table_card_policy">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/124_create_table_card_policy.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="123_alter_table_add_column_loan_application">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/123_alter_table_add_column_loan_application.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="125_alter_table_credit_card">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/125_alter_table_credit_card.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="126_alter_table_credit_card">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/126_alter_table_credit_card.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="127_create_table_card_type">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/127_create_table_card_type.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="128_add_column_old_id_no_2_3">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/128_add_column_old_id_no_2_3.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--129_add_column_msb_staff_table_salary_incomes.sql-->
+  <changeSet author="tuanca3" id="129_add_column_msb_staff_table_salary_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/129_add_column_msb_staff_table_salary_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="130_create_table_nationality">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/130_create_table_nationality.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="130_alter_table_oprisk">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/130_alter_table_oprisk.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="131_create_table_loan_application_item">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/131_create_table_loan_application_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="132_migrate_data">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/132_migrate_data.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="129_add_column_type_table_collateral_owner_map">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/129_add_column_type_table_collateral_owner_map.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="134_add_column_to_collateral_owner">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/134_add_column_to_collateral_owner.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="134_add_column_table_other_income">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/134_add_column_table_other_income.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="135_alter_column_table_field_survey_items">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/135_alter_column_table_field_survey_items.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="135_add_column_to_business_income">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/135_add_column_to_business_income.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="136_add_column_to_asset_evaluate_item">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/136_add_column_to_asset_evaluate_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="136_create_table_common_income">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/136_create_table_common_income.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="137_alter_table_credit_appraisal">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/137_alter_table_credit_appraisal.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="138_create_table_loan_item_collateral_distribute">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/138_create_table_loan_item_collateral_distribute.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv" id="139_insert_ward_thua_thien_hue">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/139_insert_ward_thua_thien_hue.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="140_add_column_to_asset_evaluate">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/140_add_column_to_asset_evaluate.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="141_add_column_to_credit_worthiness_item">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/141_add_column_to_credit_worthiness_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="141_create_table_partner_channel">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/141_create_table_partner_channel.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--142_alter_table_loan_application_item-->
+  <changeSet author="tuanca3" id="142_alter_table_loan_application_item">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/142_alter_table_loan_application_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--143_alter_table_loan_item_collateral_distribute-->
+  <changeSet author="tuanca3" id="143_alter_table_loan_item_collateral_distribute">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/143_alter_table_loan_item_collateral_distribute.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="144_alter_table_creditworthiness_items">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/144_alter_table_creditworthiness_items.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="145_alter_table_exception_items">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/145_alter_table_exception_items.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="146_create_table_mobio_history">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/146_create_table_mobio_history.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="147_create_table_log_migration">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/147_create_table_log_migration.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet id="migration_release_302" author="tutv4">
+    <customChange class="vn.com.msb.homeloan.core.migration.releases._302.TaskChange">
+    </customChange>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="148_alter_table_cic_oprisk">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/148_alter_table_cic_oprisk.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="148_migrate_data">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/148_migrate_data.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="149_modify_database_structure">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/149_modify_database_structure.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="149_alter_table_creditworthiness_item">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/149_alter_table_creditworthiness_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="150_alter_table_file_config">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/150_alter_table_file_config.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="151_alter_table_credit_institution_add_index">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/151_alter_table_credit_institution_add_index.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--133_delete_columns_table_loan_applications-->
+  <changeSet author="tutv4" id="133_delete_columns_table_loan_applications">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/133_delete_columns_table_loan_applications.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="152_alter_all_tables_created_at_updated_at">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/152_alter_all_tables_created_at_updated_at.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="153_alter_table_cic_oprisk">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/153_alter_table_cic_oprisk.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="154_file_config">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/154_file_config.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="155_update_product_code_config">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/155_update_product_code_config.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="156_alter_table_loan_application_item">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/156_alter_table_loan_application_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="157_drop_procedure">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/157_drop_procedure.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="158_alter_procedure_get_keys">
+    <sqlFile path="classpath:/db/sql/158_alter_procedure_get_keys.sql"
+      endDelimiter="#"
+      stripComments="false"
+      splitStatements="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="159_alter_procedure_get_cms_keys">
+    <sqlFile path="classpath:/db/sql/159_alter_procedure_get_cms_keys.sql"
+      endDelimiter="#"
+      stripComments="false"
+      splitStatements="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="160_create_table_aml">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/160_create_table_aml.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="160_create_table_feedback">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/160_create_table_feedback.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="161_create_table_feedback_suggestion_map">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/161_create_table_feedback_suggestion_map.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="162_create_table_suggestion_comment">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/162_create_table_suggestion_comment.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="163_alter_table_aml">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/163_alter_table_aml.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--163_init_data_table_suggestion_comment-->
+  <changeSet author="tutv4" id="163_init_data_table_suggestion_comment">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/163_init_data_table_suggestion_comment.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--164_alter_tables-->
+  <changeSet author="tutv4" id="164_alter_tables">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/164_alter_tables.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--165_update_email_to_lower_if_contain_uppercase-->
+  <changeSet author="tutv4" id="165_update_email_to_lower_if_contain_uppercase">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/165_update_email_to_lower_if_contain_uppercase.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="164_migration_data_loan_application_item">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/164_migration_data_loan_application_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="165_migration_receive_date_from_cms">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/165_migration_receive_date_from_cms.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv5" id="166_add_branch_code_index_in_cms_users">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/166_add_branch_code_index_in_cms_users.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--166_create_table_mobio_consume_message_log-->
+  <changeSet author="tutv4" id="166_create_table_mobio_consume_message_log">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/166_create_table_mobio_consume_message_log.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--167_create_pic_rm_history-->
+  <changeSet author="tutv4" id="167_create_pic_rm_history">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/167_create_pic_rm_history.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--166_create_table_mobio_consume_message_error-->
+  <changeSet author="tutv4" id="168_create_table_mobio_consume_message_error">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/168_create_table_mobio_consume_message_error.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--169_alter_table_loan_application-->
+  <changeSet author="tutv4" id="169_alter_table_loan_application">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/169_alter_table_loan_application.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--170_drop_column_table_loan_application-->
+  <changeSet author="tutv4" id="170_drop_column_table_loan_application">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/170_drop_column_table_loan_application.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="171_add_pic_rm_index_in_loan_applications">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/171_add_pic_rm_index_in_loan_applications.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--172_alter_table_collaterals-->
+  <changeSet author="tutv4" id="172_alter_table_collaterals">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/172_alter_table_collaterals.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="173_create_m_value">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/173_create_m_value.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="174_create_m_value_asset_info">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/174_create_m_value_asset_info.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="hienpv" id="173_alter_all_tables_created_at_updated_at">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/173_alter_all_tables_created_at_updated_at.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="175_alter_table_m_value">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/175_alter_table_m_value.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tuanca3" id="176_alter_table_m_value_asset_info">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/176_alter_table_m_value_asset_info.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--177_create_table_properties-->
+  <changeSet author="tutv4" id="177_create_table_properties">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/177_create_table_properties.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--178_alter_table_properties-->
+  <changeSet author="tutv4" id="178_alter_table_properties">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/178_alter_table_properties.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="khanhdq3" id="166_create_table_advise_customer">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/166_create_table_advise_customer.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="khanhdq3" id="179_create_table_question_category.sql">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/179_create_table_question_category.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="khanhdq3" id="180_create_table_question">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/180_create_table_question.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="khanhdq3" id="181_create_table_answer">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/181_create_table_answer.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq3" id="183_alter_question_add_index_column">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/183_alter_question_add_index_column.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--184_alter_table_collaterals-->
+  <changeSet author="tutv4" id="184_alter_table_loan_application_item">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/184_alter_table_loan_application_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq3" id="184_alter_customer_advise_add_mobio_status">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/184_alter_customer_advise_add_mobio_status.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq3" id="185_alter_mtk_tracking_add_advise_id">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/185_alter_mtk_tracking_add_advise_id.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--187_alter_table_loan_application_item-->
+  <changeSet author="tutv4" id="187_alter_table_loan_application_item">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/187_alter_table_loan_application_item.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--188_alter_table_product_code_config-->
+  <changeSet author="tutv4" id="188_alter_table_product_code_config">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/188_alter_table_product_code_config.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--189_init_data_danh_muc_ho_so-->
+  <changeSet author="tutv4" id="189_init_data_danh_muc_ho_so">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/189_init_data_danh_muc_ho_so.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="190_drop_procedure">
+    <sqlFile dbms="mysql"
+      path="classpath:/db/sql/190_drop_procedure.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="191_alter_procedure_get_keys">
+    <sqlFile path="classpath:/db/sql/191_alter_procedure_get_keys.sql"
+      endDelimiter="#"
+      stripComments="false"
+      splitStatements="false"/>
+  </changeSet>
+
+  <changeSet author="tutv4" id="192_alter_procedure_get_cms_keys">
+    <sqlFile path="classpath:/db/sql/192_alter_procedure_get_cms_keys.sql"
+      endDelimiter="#"
+      stripComments="false"
+      splitStatements="false"/>
+  </changeSet>
+
+  <!--193_init_data_cau_hoi_thuong_gap-->
+  <changeSet author="tutv4" id="193_init_data_cau_hoi_thuong_gap">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/193_init_data_cau_hoi_thuong_gap.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--194_create_procedure_get_product_code_config-->
+  <changeSet author="tutv4" id="194_create_procedure_get_product_code_config">
+    <sqlFile path="classpath:/db/sql/194_create_procedure_get_product_code_config.sql"
+      endDelimiter="#"
+      stripComments="false"
+      splitStatements="false"/>
+  </changeSet>
+
+  <!--195_migrate_data-->
+  <changeSet author="tutv4" id="195_migrate_data">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/195_migrate_data.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq3" id="195_create_table_overdraft">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/195_create_table_overdraft.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+  <!--196_insert_master_data-->
+  <changeSet author="tutv4" id="196_insert_master_data">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/196_insert_master_data.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="anhpb2" id="188_create_table_loan_advise_customer">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/188_create_table_loan_advise_customer.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq3" id="193_add_status_column_loan_advise_customer">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/193_add_status_column_loan_advise_customer.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq3" id="187_create_table_interest_rate">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/187_create_table_interest_rate.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq3" id="188_create_table_debt_payment_method">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/188_create_table_debt_payment_method.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq3" id="189_insert_debt_payment_method_data">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/189_insert_debt_payment_method_data.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq3" id="190_insert_interest_rate_data">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/190_insert_interest_rate_data.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq3" id="191_insert_configuration_properties_loan_calculation">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/191_insert_configuration_properties_loan_calculation.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq3" id="192_update_configuration_loan_calculation">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/192_update_configuration_loan_calculation.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--194_alter_table_loan_applications-->
+  <changeSet author="khanhdq3" id="194_alter_table_loan_applications">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/194_alter_table_loan_applications.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--195_create_table_overdraft-->
+  <changeSet author="tutv4" id="195_create_table_overdraft">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/195_create_table_overdraft.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--196_alter_table_loan_applications-->
+  <changeSet author="tutv4" id="196_alter_table_loan_applications">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/196_alter_table_loan_applications.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--197_alter_table_loan_item_collateral_distribution-->
+  <changeSet author="tutv4" id="197_alter_table_loan_item_collateral_distribution">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/197_alter_table_loan_item_collateral_distribution.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--197_alter_table_loan_application_item-->
+  <changeSet author="tutv4" id="198_alter_table_loan_applications">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/198_alter_table_loan_applications.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--200_alter_table_loan_applications-->
+  <changeSet author="tutv4" id="200_alter_table_loan_applications">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/200_alter_table_loan_applications.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--197_alter_table_loan_application_item-->
+  <changeSet author="tutv4" id="199_update_debt_payment_method_data">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/199_update_debt_payment_method_data.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--199_alter_table_loan_applications-->
+  <changeSet author="tutv4" id="199_alter_table_loan_applications">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/199_alter_table_loan_applications.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--201_alter_table_creditworthiness_items-->
+  <changeSet author="tutv4" id="201_alter_table_creditworthiness_items">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/201_alter_table_creditworthiness_items.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--208_insert_data_ward-->
+  <changeSet author="anhpb2" id="208_insert_data_ward">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/208_insert_data_ward.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq3" id="202_alter_profiles_table_add_passport_no">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/202_alter_profiles_table_add_passport_no.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="khanhdq3" id="203_add_new_credit_card_policies">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/203_add_new_credit_card_policies.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="khanhdq3" id="204_add_mhousing_properties">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/204_add_mhousing_properties.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="khanhdq3" id="206_alter_old_id_no3">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/206_alter_old_id_no3.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--203_alter_organization-->
+  <changeSet author="khanhdq3" id="203_alter_organization">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/203_alter_organization.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <!--203_alter_organization-->
+  <changeSet author="khanhdq3" id="207_update_homepage_config">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/207_update_homepage_config.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="anhpb2" id="209_create_category_config">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/209_create_category_config.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq" id="210_create_table_allotment_user">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/210_create_table_allotment_user.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq" id="211_create_table_request_pricing">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/211_create_table_request_pricing.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq" id="212_update_question_category">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/212_update_question_category.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="khanhdq" id="213_alter_table_other_incomes">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/213_alter_table_other_incomes.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="anhpb2" id="214_alter_table_card_policy">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/214_alter_table_card_policy.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="khanhdq" id="215_create_table_mvalue_history">
+    <sqlFile dbms="mysql"
+      path="classpath:db/sql/215_create_table_mvalue_history.sql"
+      relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="215_create_table_document_mapping">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/215_create_table_document_mapping.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="216_alter_table_document_mapping">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/216_alter_table_document_mapping.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="217_create_table_mvalue_upload_files">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/217_create_table_mvalue_upload_files.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="218_alter_for_mvalue_cic">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/218_alter_for_mvalue_cic.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="219_alter_table_nationality">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/219_alter_table_nationality.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="220_alter_table_province">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/220_alter_table_province.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="221_alter_table_district">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/221_alter_table_district.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="222_alter_table_ward">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/222_alter_table_ward.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="223_alter_table_organization">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/223_alter_table_organization.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="224_alter_table_file_config_categories">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/224_alter_table_file_config_categories.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="225_alter_store_get_cms_keys">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/225_alter_store_get_cms_keys.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="226_add_store_get_cms_keys">
+    <sqlFile path="classpath:/db/sql/226_add_store_get_cms_keys.sql"
+             endDelimiter="#"
+             stripComments="false"
+             splitStatements="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="227_alter_table_file_config">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/227_alter_table_file_config.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="228_alter_table_mvalue_upload_files">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/228_alter_table_mvalue_upload_files.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="229_insert_table_document_mapping">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/229_insert_table_document_mapping.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="230_alter_table_mvalue_upload_files">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/230_alter_table_mvalue_upload_files.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="anhpb2" id="231_alter_table_collaterals">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/231_alter_table_collaterals.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="anhpb2" id="232_alter_table_upload_m_value_history">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/232_alter_table_upload_m_value_history.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="anhpb2" id="233_alter_table_organization">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/233_alter_table_organization.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="234_alter_table_file_rules">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/234_alter_table_file_rules.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="anhpb2" id="235_alter_store_get_keys">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/235_alter_store_get_keys.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="236_add_store_get_keys">
+    <sqlFile path="classpath:/db/sql/236_add_store_get_keys.sql"
+             endDelimiter="#"
+             stripComments="false"
+             splitStatements="false"/>
+  </changeSet>
+
+  <changeSet author="anhpb2" id="237_alter_table_file_config">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/237_alter_table_file_config.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+
+  <changeSet author="anhpb2" id="238_alter_table_district_ward">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/238_alter_table_district_ward.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="239_alter_table_interest_rate">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/239_alter_table_interest_rate.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="240_update_table_province">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/240_update_table_province.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="241_update_table_district">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/241_update_table_district.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="242_update_table_ward">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/242_update_table_ward.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="243_update_table_properties">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/243_update_table_properties.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="244_update_table_organization_category_config">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/244_update_table_organization_category_config.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="quanvx4" id="245__update__table__properties__and__interest_rate">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/245__update__table__properties__and__interest_rate.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="246_alter_table_mvalue_upload_files">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/246_alter_table_mvalue_upload_files.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+  <changeSet author="anhpb2" id="247_alter_table_cic_item">
+    <sqlFile dbms="mysql"
+             path="classpath:db/sql/247_alter_table_cic_item.sql"
+             relativeToChangelogFile="false"/>
+  </changeSet>
+</databaseChangeLog>
